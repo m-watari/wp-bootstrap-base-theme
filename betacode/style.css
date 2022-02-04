@@ -437,7 +437,63 @@ h6 {
 
 p {
 	/* margin-bottom: 1.5em; */
+	/* color: white; */
+}
+
+.header-title, .header-title a {
+	font-size: 24px;
+    line-height: 24px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.site-description2 {
 	color: white;
+}
+
+.page_item {
+	font-size: 13px;
+    line-height: 24px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.site-main {
+	background-color: #FAFAFA;
+}
+
+.entry-title {
+	font-size: 36px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.entry-meta, .entry-footer  {
+	font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+
+.comments-title {
+	font-size: 24px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.comments-area {
+	background-color: #FFF;
+	padding: 20px;
+}
+
+.comment-reply-title {
+	font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    text-transform: none;
 }
 
 dfn,
@@ -572,9 +628,9 @@ li.page_item a:visited {
 	color: #FFF;
 }
 
-a:visited {
+/* a:visited {
 	color: #800080;
-}
+} */
 
 a:hover,
 a:focus,
@@ -783,7 +839,11 @@ textarea {
 	display: block;
 }
 
-.post,
+.post {
+	background-color: #FFF;
+	padding: 20px;
+}
+
 .page {
 	margin: 0 0 1.5em;
 }

@@ -38,17 +38,18 @@
 						the_custom_logo();
 						if (is_front_page() && is_home()) :
 						?>
-							<span class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></span>
+							<span class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" class="header-title" rel="home"><?php bloginfo('name'); ?></a></span>
 						<?php
 						else :
 						?>
-							<span class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></span>
+							<span class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" class="header-title" rel="home"><?php bloginfo('name'); ?></a></span>
 						<?php endif; ?>
 					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarText">
+
+					<div class="collapse navbar-collapse" id="navbarCollapse">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
 								<?php
