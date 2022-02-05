@@ -448,8 +448,22 @@ p {
     text-decoration: none;
 }
 
+.header-title a:visited {
+	color: #FFF;
+}
+
+.header-title a:hover,
+.header-title a:focus,
+.header-title a:active {
+	color: #f5f5f8;
+}
+
 .site-description2 {
 	color: white;
+}
+
+#primary-menu {
+	padding-top: 20px;
 }
 
 .page_item {
@@ -458,6 +472,8 @@ p {
     color: white;
     font-weight: 200;
     text-decoration: none;
+	display: inline;
+	margin-right: 20px;
 }
 
 .site-main {
@@ -619,9 +635,13 @@ a {
 	text-decoration: none;
 }
 
-a page-title {
+/* a page-title {
 	color: none;
 	text-decoration: none;
+} */
+
+li.page_item a {
+	color: #FFF;
 }
 
 li.page_item a:visited {
@@ -793,6 +813,12 @@ textarea {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+@media screen and (max-width:998px) { 
+	.page_item {
+		display: flex;
+	}
 }
 
 @media screen and (min-width: 37.5em) {
