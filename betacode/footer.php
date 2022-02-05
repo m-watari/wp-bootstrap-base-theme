@@ -14,10 +14,10 @@
 	<footer class="footer mt-auto py-3 bg-light">
 	<div class="container">
 	<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'betacode' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://beta-code.net/', 'betacode' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'betacode' ), 'WordPress' );
+				printf( esc_html__( '&copy; %s', 'betacode' ), 'BetaCode' );
 				?>
 			</a>
 		</div><!-- .site-info -->
