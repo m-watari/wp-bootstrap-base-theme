@@ -630,10 +630,10 @@ table {
 
 /* Links
 --------------------------------------------- */
-a {
+/* a {
 	color: #4169e1;
 	text-decoration: none;
-}
+} */
 
 /* a page-title {
 	color: none;
@@ -652,7 +652,7 @@ li.page_item a:visited {
 	color: #800080;
 } */
 
-a:hover,
+/* a:hover,
 a:focus,
 a:active {
 	color: #191970;
@@ -665,7 +665,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+} */
 
 /* Forms
 --------------------------------------------- */
