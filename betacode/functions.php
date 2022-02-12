@@ -175,32 +175,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-/* 最新記事リスト */
-function getNewItems($atts) {
-    extract(shortcode_atts(array(
-        "num" => '', //最新記事リストの取得数
-        "cat" => '' //表示する記事のカテゴリー指定
-    ), $atts));
-    global $post;
-    $oldpost = $post;
-    $myposts = get_posts('numberposts='.$num.'&order=DESC&orderby=post_date&category='.$cat);
-    $retHtml='<ul class="news_list">';
-        foreach($myposts as $post) :
-            $cat = get_the_category();
-            $catname = $cat[0]->cat_name;
-            $catslug = $cat[0]->slug;
-            setup_postdata($post);
-            $retHtml.='<li>';
-            $retHtml.='<span class="news_date">'.get_post_time( get_option( 'date_format' )).'</span>';
-            $retHtml.='<span class="cat '.$catslug.'">'.$catname.'</span>';
-            $retHtml.='<a href="'.get_permalink().'" class="news_title">'.the_title("","",false).'</a>';
-            $retHtml.='</li>';
-        endforeach;
-    $retHtml.='</ul>';
-    $post = $oldpost;
-    wp_reset_postdata();
-    return $retHtml;
-}
-add_shortcode("news", "getNewItems");
-
