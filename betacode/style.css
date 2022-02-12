@@ -422,6 +422,16 @@ h6 {
 	clear: both;
 }
 
+h2.postCardTitle {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+h3.postCardTitle {
+	font-size: 18px;
+	font-weight: 800;
+}
+
 #primary {
 	margin-top: 25px;
 }
