@@ -491,6 +491,17 @@ p {
 	margin-right: 20px;
 }
 
+.menu-item
+{
+	font-size: 13px;
+    line-height: 24px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+	display: inline;
+	margin-right: 20px;
+}
+
 .site-main {
 	background-color: #FAFAFA;
 }
@@ -676,6 +687,14 @@ li.page_item a:visited {
 	color: #FFF;
 }
 
+li.menu-item a {
+	color: #FFF;
+}
+
+li.menu-item a:visited {
+	color: #FFF;
+}
+
 /* a:visited {
 	color: #800080;
 } */
@@ -845,6 +864,10 @@ textarea {
 
 @media screen and (max-width:998px) { 
 	.page_item {
+		display: flex;
+	}
+
+	.menu-item {
 		display: flex;
 	}
 }
